@@ -6,10 +6,82 @@ body{
     background-color: #333;
     padding: 10px;
 }
-<!--apply inline-block to span elements-->
-span {
+#headerTop > div {
     display: inline-block;
-    margin: 10px; /* Add margin for spacing if needed */
-    padding: 5px; /* Add padding if needed */
-    background-color: lightblue; /* Set a background color if needed */
 }
+
+#headerTop span {
+    margin-right: 10px; /* Adjust the margin value as needed */
+}
+#headerTop span:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#headerBottom {
+    border-bottom: 1px solid gray;
+    padding: 10px; /* Adjust the padding value as needed */
+}
+#headerBottom > div {
+    display: inline-block;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+#composeButton {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    background-color: #0074d9; /*change to your prefferd background color*/
+    padding: 10px 20px; /*adjust padding as needed*/
+    border-radius: 5px; /*adjust border-radius as needed*/
+    margin-right: 10px; /*adjust margin right as needed*/
+    cursor: pointer; 
+    text-align: center; /*center the text horizontally*/
+}
+/* Remove default button styling */
+button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer; /* Add pointer cursor to all buttons */
+    /* Add any additional styles to reset default button appearance */
+}
+#headerBottom button {
+    /* Reset any additional styles specific to buttons inside headerBottom */
+    /* Add margin to the right */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+/* Style the button with class "active" inside #headerBottom */
+#headerBottom button.active {
+    font-weight: bolder;
+    border-bottom: 2px solid #0074d9; /* You can choose your preferred color */
+}
+.email > div {
+    display: inline-block;
+}
+.email {
+    padding: 10px; /* Add padding as needed */
+    padding-left: 20px; /* Larger padding to the left */
+    border-bottom: 1px solid #eee; /* Very light grey border */
+}
+.email > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.email .author,
+.email .subject {
+    width: 35%;
+}
+
+.email .check,
+.email .date,
+.email .size {
+    width: 8%;
+}
+.email:nth-child(2) {
+    font-weight: bold;
+}
+

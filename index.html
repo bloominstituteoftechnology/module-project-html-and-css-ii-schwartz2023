@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <style>
     /* 👉 Task 1- Apply the reset found on this page: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
@@ -86,9 +87,24 @@
         </div>
       </div>
       <div id="headerBottom">
-        <div>Compose</div>
-        <div>
-          <button>All mail</button>
+        <button id="myButton" class="custom-button" onclick="myFunction()">Compose</button>
+        <style>
+          .custom-button {
+              background-color: #0074d9;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+          }
+      </style>
+      <script>
+        function myFunction() {
+            alert('Button clicked!');
+        }
+    </script>
+    
+      <div>
+          <button class="active">All mail</button>
           <button>Unread</button>
           <button>Pinned</button>
           <button>VIPs</button>
