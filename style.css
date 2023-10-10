@@ -84,4 +84,12 @@ button {
 .email:nth-child(2) {
     font-weight: bold;
 }
+body {
+    display: flex; /* Create a flex container */
+}
+
+.column {
+    flex: 1; /* Each column takes an equal portion of available space */
+    padding: 10px; /* Add padding as needed */
+}
 
