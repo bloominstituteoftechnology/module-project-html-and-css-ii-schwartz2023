@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}    
+#headerTop {
+    color: white;
+    background-color: #333;
+    padding: 10px;
+}
+<!--apply inline-block to span elements-->
+span {
+    display: inline-block;
+    margin: 10px; /* Add margin for spacing if needed */
+    padding: 5px; /* Add padding if needed */
+    background-color: lightblue; /* Set a background color if needed */
+}
